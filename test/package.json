@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Microsoft/azure-devops-node-api#readme",
   "dependencies": {
-    "azure-devops-node-api": "file:../_build",
+    "@rentready/azure-devops-node-api": "file:../_build",
     "typed-rest-client": "file:../_build/node_modules/typed-rest-client"
   }
 }
