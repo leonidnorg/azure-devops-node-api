@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: ${{ matrix.version }}
       - run: yarn import
-      - run: yarn install --frozen-lockfile
+      - run: yarn install --check-files
       # - run: npm ci
-      - run: yarn run build
-      - run: yarn run units
+      - run: yarn build
+      - run: yarn units
