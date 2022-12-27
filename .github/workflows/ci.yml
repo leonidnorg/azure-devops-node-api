@@ -12,13 +12,15 @@ jobs:
   build:
     strategy:
       matrix:
-        version: [8, 10, 12, 14, 16]
+        version: [6, 8, 10, 12, 14, 16]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.version }}
-      - run: npm ci
-      - run: npm run build
-      - run: npm run units
+      - run: yarn import
+      - run: yarn install --frozen-lockfile
+      # - run: npm ci
+      - run: yarn run build
+      - run: yarn run units
