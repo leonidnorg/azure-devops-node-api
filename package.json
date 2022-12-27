@@ -23,9 +23,6 @@
         "Teddy Ward <t-edward@microsoft.com>"
     ],
     "license": "MIT",
-    "publishConfig": {
-      "access": "public"
-    },
     "dependencies": {
         "tunnel": "0.0.6",
         "typed-rest-client": "^1.8.4"
